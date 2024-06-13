@@ -1,6 +1,6 @@
 ![loli](https://miro.medium.com/v2/resize:fit:1200/1*9h9YpiykxheK8j8qh4gM4w.png)
 
-# Documentación de Librería de Procedimientos Almacenados ViewSQL
+# Documentación de la Librería ViewSQL
 
 ## Visión General
 Esta librería contiene una colección de procedimientos almacenados diseñados para facilitar varias tareas de gestión de bases de datos. Cada procedimiento sirve un propósito específico, que van desde ver estructuras de tablas hasta obtener ubicaciones físicas de archivos de la base de datos. A continuación, se describe en detalle cada procedimiento incluido en la librería junto con ejemplos de uso.
