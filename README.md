@@ -1,3 +1,5 @@
+![loli](https://miro.medium.com/v2/resize:fit:1200/1*9h9YpiykxheK8j8qh4gM4w.png)
+
 # Documentación de Librería de Procedimientos Almacenados ViewSQL
 
 ## Visión General
