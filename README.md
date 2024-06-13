@@ -155,3 +155,29 @@ Esta librería contiene una colección de procedimientos almacenados diseñados 
    - *Descripción*: Muestra los índices de una tabla especificada.
    - *Parámetros*: `IN table_name VARCHAR(128)`: El nombre de la tabla a consultar.
    - *Salida*: Lista todos los índices para la tabla especificada
+
+---
+     13. **viewDatabaseFiles**
+
+   - *Descripción*: Recupera metadatos sobre las tablas en una base de datos especificada, incluyendo tipo de motor, número de filas, longitud de datos y más.
+   - *Parámetros*: `IN database_name VARCHAR(128)`: El nombre de la base de datos a consultar.
+   - *Salida*: Lista metadatos sobre las tablas incluyendo esquema, nombre de la tabla, motor, filas, longitud de datos, longitud de índice, espacio libre de datos, valor de autoincremento, tiempo de creación, tiempo de actualización, tiempo de chequeo y formato de la tabla.
+   - *Ejemplo*:
+     ```
+     CALL viewDatabaseFiles('mi_base_de_datos');
+     ```
+   - *Explicación*: Este comando llama al procedimiento viewDatabaseFiles y pasa el nombre de la base de datos 'mi_base_de_datos' como parámetro. El resultado será una lista de metadatos sobre las tablas en la base de datos especificada.
+
+---
+
+14. **viewTableConstraints**
+
+   - *Descripción*: Recupera información sobre las restricciones de una tabla especificada.
+   - *Parámetros*: `IN table_name VARCHAR(128)`: El nombre de la tabla a consultar.
+   - *Salida*: Lista los nombres de las restricciones, tipos de restricciones, nombres de las columnas y otros detalles relacionados con las restricciones.
+   - *Ejemplo*:
+     ```
+     CALL viewTableConstraints('mi_tabla');
+     ```
+   - *Explicación*: Este comando llama al procedimiento viewTableConstraints y pasa el nombre de la tabla 'mi_tabla' como parámetro. El resultado será una lista de todas las restricciones de la tabla especificada, incluyendo detalles sobre sus tipos y las columnas que abarcan.
+
