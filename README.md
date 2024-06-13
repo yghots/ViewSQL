@@ -154,10 +154,16 @@ Esta librería contiene una colección de procedimientos almacenados diseñados 
 
    - *Descripción*: Muestra los índices de una tabla especificada.
    - *Parámetros*: `IN table_name VARCHAR(128)`: El nombre de la tabla a consultar.
-   - *Salida*: Lista todos los índices para la tabla especificada
+   - *Salida*: Lista todos los índices para la tabla especificada.
+   - *Ejemplo*:
+     ```
+     CALL viewTableIndexes('mi_tabla');
+     ```
+   - *Explicación*: Este comando llama al procedimiento viewTableIndexes y pasa el nombre de la tabla 'mi_tabla' como parámetro. El resultado será una lista de todos los índices para la tabla especificada.
 
 ---
-     13. **viewDatabaseFiles**
+
+13. **viewDatabaseFiles**
 
    - *Descripción*: Recupera metadatos sobre las tablas en una base de datos especificada, incluyendo tipo de motor, número de filas, longitud de datos y más.
    - *Parámetros*: `IN database_name VARCHAR(128)`: El nombre de la base de datos a consultar.
